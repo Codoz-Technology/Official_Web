@@ -47,17 +47,13 @@ html::-webkit-scrollbar {
 .text-green-500 {
     color: #26c758;
 }
-.floating { 
-    /* animation disabled */
-} 
+
 @keyframes floating { 
     0% { transform: translate(0, 0px); } 
     50% { transform: translate(0, 8px); } 
     100% { transform: translate(0, -0px); }  
 } 
-.floating-4 { 
-    /* animation disabled */
-} 
+
 @keyframes floating-4 { 
     0% { transform: translate(0, 0px); } 
     50% { transform: translate(0, 8px); } 
@@ -155,7 +151,7 @@ img {
     -khtml-user-drag: none;
     -moz-user-drag: none;
     -o-user-drag: none;
-    user-drag: none;
+    /* user-drag: none; */
     pointer-events: none;
 }
 
@@ -196,4 +192,32 @@ img {
     body {
         display: none;
     }
+}
+
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
 }
