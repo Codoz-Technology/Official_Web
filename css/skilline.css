@@ -1,3 +1,11 @@
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
 /*primary color*/
 .bg-cream {
     background-color: #FFF2E1;
@@ -64,6 +72,11 @@ html::-webkit-scrollbar {
 }
 
 /* Footer Styles */
+footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .footer-bg {
   background-color: #1a1f36;
   color: #d1d5db;
@@ -173,7 +186,7 @@ img {
 }
 
 /* Hide content when dev tools are open (backup method) */
-@media screen and (max-height: 500px) and (min-width: 800px) {
+@media screen and (max-height: 400px) and (min-width: 900px) {
     body {
         display: none;
     }
